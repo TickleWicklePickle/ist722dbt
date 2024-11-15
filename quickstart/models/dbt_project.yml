@@ -1,4 +1,0 @@
-
-models:
-  jaffle_shop:
-    +materialized: table
