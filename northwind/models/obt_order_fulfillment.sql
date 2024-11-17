@@ -5,7 +5,7 @@ d_customer as (
     select * from {{ ref('dim_customers') }}
 ),
 d_employee as (
-    select * from {{ ref('dim_employee') }}
+    select * from {{ ref('dim_employees') }}
 ),
 d_date as (
     select * from {{ ref('dim_date') }}

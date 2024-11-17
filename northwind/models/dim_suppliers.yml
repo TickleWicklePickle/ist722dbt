@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: dim_suppliers
+    description: supplier Dimension. One row per supplier
+    columns:
+      - name: supplierkey
+        description: The surrogate key of the supplier
+        tests:
+          - not_null
+          - unique
+      - name: supplierid
+        description: The business / source key of the supplier
+        tests:
+          - not_null
+          - unique
+      - name: companyname
+        description: supplier company name
+      - name: contactname
+        description: supplier contact name
+      - name: contacttitle
+        description: supplier contact title
+      - name: supplieraddress
+        description: supplier address
+      - name: suppliercity
+        description: supplier city
+      - name: supplierregion
+        description: supplier region
+      - name: supplierpostalcode
+        description: supplier zip
+      - name: suppliercounty
+        description: countrry of supplier
+      - name: supplierphone
+        description: phone number
+      - name: supplierfax
+        description: fax
+      - name: supplierhomepage
+        description: website 
+
